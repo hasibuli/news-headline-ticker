@@ -17,5 +17,4 @@ Also upcoming our pro version with more than three styles slide, color, backgrou
 1. Upload `news-headline-ticker` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Click on the new menu item "News Headline" and create your head line news.
-3. Just copy and paste " <strong>if(function_exists('newsHeadLineTkr')){headLinePost();}</strong> 
-in the template code or  <strong>[News-Ticker]</strong> in the post/page" where you want to display news head line.
+4. Just copy and paste " <strong>if(function_exists('newsHeadLineTkr')){headLinePost();}</strong> in the template code or  <strong>[News-Ticker]</strong> in the post/page" where you want to display news head line.
