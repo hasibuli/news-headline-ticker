@@ -35,10 +35,10 @@ Also upcoming our pro version with more than three styles slide, color, backgrou
 in the template code or  <strong>[News-Ticker]</strong> in the post/page" where you want to display news head line.
 
                                           == Frequently asked questions ==
-= Can it possible to use throw shordcode? =
-Yes.
-= Could it possible to places this ticker on post or page? =
-Yes.
+Can it possible to use throw shordcode? 
+= Yes.
+Could it possible to places this ticker on post or page? 
+= Yes.
 
                                           == Screenshots ==
 1. Ticker Settings
