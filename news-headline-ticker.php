@@ -1,12 +1,12 @@
 <?php
 /*
 Plugin Name: News Headline Ticker
-Plugin URI: http://www.e2soft.com/wordpress-plugin/news-headline-ticker
+Plugin URI: http://www.e2soft.com/blog/news-headline-ticker/
 Description: News Headline Ticker is a wordpress plugin to show your recent news headline as typing style slider on your website!  Use this shortcode <strong>[News-Ticker]</strong> in the post/page" where you want to display news head line.
-Version: 1.1.2
+Version: 1.1.5
 Author: S M Hasibul Islam
-Author URI: https://www.odesk.com/o/profiles/users/_~~f23680b391834fd1/
-Copyright: 2013 S M Hasibul Islam http://www.e2soft.com
+Author URI: http://www.e2soft.com/
+Copyright: 2015 S M Hasibul Islam http://www.e2soft.com
 License URI: license.txt
 */
 
@@ -48,6 +48,9 @@ function tickerPostRegister() {
 }
 add_action( 'init', 'tickerPostRegister' );
 
+foreach ( glob( plugin_dir_path( __FILE__ )."css/*.php" ) as $css_file )
+    include_once $css_file;
+
 function typingStyleFunction()
 {
 	$typingStyleFunction = SLIDE_HOOK.'admin-function.php';
@@ -73,12 +76,13 @@ add_action('wp_enqueue_scripts', 'registerTkrScript');
 function nhtAdminStyle()
 {
 	wp_enqueue_style( 'nht-admin', plugins_url('/css/nht-admin.css', __FILE__) );
+	wp_enqueue_style( 'picker-style', plugins_url('/css/colourPicker.css', __FILE__) );
+	wp_enqueue_script( 'picker-js', plugins_url('/js/colourPicker.js', __FILE__), array('jquery') );
+	wp_enqueue_style( 'wp-color-picker' );
+    wp_enqueue_script( 'iris', admin_url( 'js/iris.min.js' ), array( 'jquery-ui-draggable', 'jquery-ui-slider', 'jquery-touch-punch' ), false, 1 );
+	wp_enqueue_script( 'cp-active', plugins_url('/js/cp-active.js', __FILE__), array('jquery'), '', true );
 }
 add_action( 'admin_enqueue_scripts', 'nhtAdminStyle' ); 
-
-foreach ( glob( plugin_dir_path( __FILE__ )."css/*.php" ) as $css_file )
-    include_once $css_file;
-
 
 define(SLIDE_HOOK, "../wp-content/plugins/news-headline-ticker/lib/");
 
