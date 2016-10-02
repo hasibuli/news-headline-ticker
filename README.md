@@ -1,4 +1,4 @@
-== Description ==
+#== Description ==
 
 News Headline Ticker is a wordpress plugin to show your recent news headline as typing style slider on your website! View live demo of [News Headline Ticker](http://www.e2soft.com/blog/news-headline-ticker/). 
 
@@ -10,11 +10,11 @@ https://www.youtube.com/watch?v=F4li0kGPx70
 = Add News Headline Ticker in WordPress theme =
 https://www.youtube.com/watch?v=1dAKqB-Dr3E
 
-= Usage =
+# = Usage =
 
 * Go to your Dashboard after installation and navigate to "News Headline >> Ticker Settings" to configure the news ticker.
 
-= Features =
+# = Features =
 
   * Very easy installation
   * Shortcode system
@@ -26,7 +26,7 @@ https://www.youtube.com/watch?v=1dAKqB-Dr3E
   * Plugin tested with IE6+, FF 20+, Chrome, Safari
 
 
-== Installation ==
+# == Installation ==
 
   * Upload `news-headline-ticker` to the `/wp-content/plugins/` directory
   * Activate the plugin through the 'Plugins' menu in WordPress
@@ -34,7 +34,7 @@ https://www.youtube.com/watch?v=1dAKqB-Dr3E
   * Just copy and paste " <strong>if(function_exists('newsHeadLineTkr')){headLinePost();}</strong> 
 in the template code or  <strong>[News-Ticker]</strong> in the post/page" where you want to display news head line.
 
-== Changelog ==
+# == Changelog ==
 
 = 2.3.0 =
 
